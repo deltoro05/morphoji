@@ -17,7 +17,7 @@ Wrong-o.
 Apparently `utf8` in MySQL (and some other applications) is limited to [3 Byte 
 Unicode characters](https://en.wikipedia.org/wiki/UTF-8#Description). 
 Unfortunately the bulk of the 
-[Emoji characters](https://unicode-table.com/en/#emoticons) is found in 4 Byte
+[Emoji characters](https://symbl.cc/en/#emoticons) is found in 4 Byte
 Unicode space.
 
 Trying to store those Emoji (and other 4 Byte characters) in a MySQL `utf8`
@@ -38,7 +38,7 @@ don't want to convert just a few columns to the new charset but all of them
 (because consistency and because you will have to change your connection's
 charset as well) and you really only care about Emoji and not about 
 characters for 
-[Ancient Greek Musical Notation](https://unicode-table.com/en/#ancient-greek-musical-notation) 
+[Ancient Greek Musical Notation](https://symbl.cc/en/#ancient-greek-musical-notation) 
 aaand you just did all that converting a couple of years ago for `utf8` and 
 don't really have the time and nerve to do it again ...
 
